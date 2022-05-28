@@ -1,0 +1,111 @@
+h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container.reviews-section {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 320px;
+}
+
+.reviews-section {    
+    background-color: #FEF3E4;    
+    
+    &__title {
+        margin-bottom: 20px;
+        text-align: center;
+
+        font-family: 'Caveat Brush';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.25;
+        text-align: center;
+        
+        color: #2E2520;
+    }
+
+    &__rate {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__icon-star {
+        width: 24px;
+        height: 24px;
+        margin-top: 8px;
+    }
+
+    &__icon-star:not(:last-child) {
+        margin-right: 4px;
+    }
+}
+
+.article {
+    text-align: center;
+    font-family: 'Montserrat';
+    color: #2E2520;
+
+    &__title {
+        margin: 8px 0;
+
+        font-style: italic;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.21;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+    }
+}
+
+.swiper {
+    position: relative;
+}
+
+.swiper-pagination {    
+    margin-top: 32px;
+    text-align: center;
+
+    font-family: 'Montserrat';   
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.21;
+
+    color: #AB816C;
+}
+
+.swiper-button-next::after {
+    content: "";
+    position: absolute;
+    left: 80px;
+    bottom: 8px;
+    width: 35px;
+    border-bottom: 1px solid #AB816C;
+}
+
+.swiper-button-prev::after {
+    content: "";
+    position: absolute;
+    left: 165px;
+    bottom: 8px;
+    width: 35px;
+    border-bottom: 1px solid #AB816C;
+}
+
