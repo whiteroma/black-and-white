@@ -1,5 +1,23 @@
 <section class="registration">
-    <div class="container">
+    <div class="container img-box">
+     <img class="img-box__donut"
+     srcset="
+     ./images/donut-min.png 196w,
+     ./images/donut@2x-min.png 392w
+     "
+     sizes="196px"
+     src="./images/donut-min.png"
+     alt="donut">
+     <img class="img-box__confetti"
+     srcset="
+     ./images/confetti-tablet-min.png 191w,
+     ./images/confetti-desktop-min.png 300w,
+     ./images/confetti@2x-tablet-min.png 384w,
+     ./images/confetti@2x-desktop-min.png 600w
+     "
+     sizes="(min-width: 1280px) 300px, (min-width: 768px) 191px, 191px"
+     src="./images/confetti-tablet-min.png"
+     alt="confetti">
      <h2 class="registration__title--tablet">Registration</h2>
     <div class="thumb">
     <h2 class="registration__title">Registration</h2>
@@ -23,6 +41,7 @@
      <div class="form__thumb">
      <button class="form__button" type="submit">Register</button></div>
     </form>
+   
  </div>
 </div>
 </section> 
