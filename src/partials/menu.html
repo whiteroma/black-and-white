@@ -1,20 +1,31 @@
 <header class="page-header">
     <div class="container">
+        <picture class="page-header__donuts">
+           <source srcset="./images/header/donuts-mobile@1.png 1x, ./images/header/donuts-mobile@2.png 2x"> 
+           <img src="./images/header/donuts-mobile@1.png" alt="donuts">
+        </picture> 
+
         <div class="nav">
-            <!-- <img src="./images/logo/logo.png" alt="Логотип" width="96" height="44.08"> -->
+            <svg class="logo">
+                <use href="./images/header/cпрайт/symbol-defs.svg#logo-mobile"></use>
+            </svg>
 
              <button type="button" class="menu-burger" data-menu-button
               aria-expanded="false"  aria-controls="menu-container">
        
              <svg width="30px" height="16px" aria-label="Переключатель мобильного меню">
-               <!-- <use class="icon-cross" href="./images/svg/symbol-defs.svg#close"></use>
-               <use class="icon-menu" href="./images/svg/symbol-defs.svg#menu"></use> -->
+               <use class="icon-cross" href="./images/header/cпрайт/symbol-defs.svg#icon-close"></use>
+               <use class="icon-menu" href="./images/header/cпрайт/symbol-defs.svg#icon-menu"></use>
+             
              </svg>
              </button>
         
             <div class="menu-container" data-menu>
 
-                <!-- <img class="logo-menu" src="./images/logo/logo-menu.png" alt="Логотип" width="190" height="85"> -->
+                <svg class="logo-menu">
+                  <use  href="./images/header/cпрайт/symbol-defs.svg#logo-menu"></use>
+                </svg>
+
                 <ul class="navigation">
                     <li class="navigation__item"><a href="#" class="navigation__link">About us</a></li>
                     <li class="navigation__item"><a href="#" class="navigation__link">Program</a></li>
@@ -24,41 +35,47 @@
                
             </div>
         </div>
-        
+    </header>
+    <main>
+        <!--Hero-->
+        <section class="hero">
 
-        
-        <h1 class="title">Donut Masterclass<br> with the Donut King</h1>
-        <h3 class="subtitle">Hosted by Eva Green</h3>
-
-        <button class="button">Register</button>
-
-        <ul class="socials">
+            <div class="container">
+                <h1 class="hero__title">Donut Masterclass<br> with the Donut King</h1>
+            <h3 class="hero__subtitle">Hosted by Eva Green</h3>
     
-            <li class="socials__icon">
+            <button class="button">Register</button>
+    
+            <ul class="socials">
+        
+                <li class="socials__icon">
+    
+                    <a href="#" class="socials__links">
+                        <svg class="socials__twiter">
+                            <use href="./images/header/cпрайт/symbol-defs.svg#icon-twiter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials__icon">
+    
+                    <a href="#" class="socials__links">
+                        <svg class="socials__instagram">
+                            <use href="./images/header/cпрайт/symbol-defs.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials__icon">
+    
+                    <a href="#" class="socials__links">
+                        <svg class="socials__facebook">
+                            <use href="./images/header/cпрайт/symbol-defs.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+            
+            </div>
 
-                <a href="#" class="socials__links">
-                    <svg class="socials__twiter">
-                        <!-- <use href="./images/svg/symbol-defs.svg#twiter"></use> -->
-                    </svg>
-                </a>
-            </li>
-            <li class="socials__icon">
-
-                <a href="#" class="socials__links">
-                    <svg class="socials__instagram">
-                        <!-- <use href="./images/svg/symbol-defs.svg#instagram"></use> -->
-                    </svg>
-                </a>
-            </li>
-            <li class="socials__icon">
-
-                <a href="#" class="socials__links">
-                    <svg class="socials__facebook">
-                        <!-- <use href="./images/svg/symbol-defs.svg#facebook"></use> -->
-                    </svg>
-                </a>
-            </li>
-        </ul>
-    </div>
-   
-</header>
+        </section>
+    </main>
