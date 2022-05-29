@@ -87,6 +87,9 @@
         border-bottom: none
           }
 }
+.contact-input:not(:placeholder-shown):required:invalid {
+    border-color: red;
+}
 .button {
     display: block;
     width: 145px;
