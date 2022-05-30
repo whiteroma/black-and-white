@@ -1,0 +1,264 @@
+h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 320px;    
+
+    @media screen and (min-width: 768px) {        
+        padding: 0 15px;
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1280px) {        
+        width: 1280px;
+    }
+}
+
+.reviews-section {
+    min-width: 320px;    
+
+    &__title {        
+        text-align: center;
+    
+        font-family: 'Caveat Brush';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.25;
+        text-align: center;
+    
+        color: #2E2520;
+    }
+
+    &__list {
+        display: flex;        
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-bottom: 32px;
+    }
+
+    &__item {
+        display: none;        
+    }
+
+    &__item.swiper-slide-active {
+        display: block;
+        margin: 0 10px;
+    }
+    
+    @media screen and (min-width: 768px) {
+
+        &__list {
+            margin-top: 60px;
+            margin-bottom: 433px;
+        }
+
+        &__item {
+            position: relative;            
+        }
+        
+        &__item.swiper-slide-prev {
+            display: block;
+            margin-left: 17px;
+            margin-top: -76px;
+        }
+        
+        &__item.swiper-slide-next {
+            display: block;
+            margin-right: 17px;
+            margin-top: -76px;
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        
+        &__title {
+            font-size: 36px;
+            line-height: 1.8;
+        }
+
+        &__list {
+            margin-top: 178px;
+            margin-bottom: 391px;
+        }        
+
+        &__item.swiper-slide-prev {
+            margin-top: -143px;
+            margin-left: 111px;            
+        }        
+
+        &__item.swiper-slide-next {
+            margin-top: -143px;
+            margin-right: 111px;
+        }
+    }
+}
+
+.article {    
+    text-align: center;
+    font-family: 'Montserrat';
+    color: #2E2520;
+
+    &__rate {
+        display: flex;
+        justify-content: center;
+    }
+    
+    &__icon-star {
+        width: 24px;
+        height: 24px;
+        margin-top: 8px;
+    }
+    
+    &__icon-star:not(:last-child) {
+        margin-right: 4px;
+    }
+
+    &__title {
+        margin-top: 8px;
+
+        font-style: italic;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.21;
+    }
+
+    .swiper-slide-active &__title {
+        margin-bottom: 8px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+    }
+
+    .swiper-slide-next &__text {
+        display: none;
+    }
+
+    .swiper-slide-prev &__text {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        .swiper-slide-active & {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translate(-50%, 0);            
+            margin-bottom: 0;            
+        }
+
+        &__photo {
+            width: 151px;
+        }
+        
+        .swiper-slide-active &__photo {
+            width: 336px;
+            margin: 0 auto;
+        }
+
+        &__text {
+            width: 704px;            
+        }
+
+        .swiper-slide-active &__title {
+            margin-bottom: 20px;
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+
+        &__photo {
+            width: 285px;
+        }
+        
+        .swiper-slide-active &__photo {
+            width: 394px;
+        }
+
+        &__title {
+            font-size: 16px;
+            line-height: 1.25;
+        }
+
+        &__text {
+            width: 1010px;
+            font-size: 18px;
+            line-height: 1.22;
+        }
+    }
+}
+
+.swiper {
+    position: relative;
+}
+
+.swiper-pagination {    
+    text-align: center;
+
+    font-family: 'Montserrat';   
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.21;
+
+    color: #AB816C;
+
+    @media screen and (min-width: 1280px) {
+        font-size: 16px;
+        line-height: 1.25;
+    }
+}
+
+.swiper-button-prev::after {
+    content: "";
+    position: absolute;
+    left: 90px;
+    bottom: 8px;
+    width: 35px;
+    border-bottom: 1px solid #AB816C;
+
+    @media screen and (min-width: 768px) {
+        left: 308px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        left: 564px;
+        bottom: 9px;
+    }
+}
+
+.swiper-button-next::after {
+    content: "";
+    position: absolute;
+    left: 175px;
+    bottom: 8px;
+    width: 35px;
+    border-bottom: 1px solid #AB816C;
+
+    @media screen and (min-width: 768px) {
+        left: 393px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        left: 649px;
+        bottom: 9px;
+    }
+}
