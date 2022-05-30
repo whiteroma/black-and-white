@@ -119,8 +119,8 @@ a {
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 113px;
-    height: 99px;
+    width: 84px;
+    height: 73px;
 
     background-image: url(../images/WheatMob.png);
     background-size: cover;
@@ -135,8 +135,8 @@ a {
     }
 
     @media (min-width: 768px) {
-        width: 207px;
-        height: 100px;
+        width: 184px;
+        height: 90px;
         background-image: url(../images/WheatTab.png);
         
 
@@ -149,8 +149,8 @@ a {
     }
 
     @media (min-width: 1280px) {
-        width: 355px;
-        height: 190px;
+        width: 302px;
+        height: 175px;
         background-image: url(../images/WheatDerstop.png);
 
         @media (min-device-pixel-ratio: 2),
