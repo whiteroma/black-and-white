@@ -1,0 +1,47 @@
+<section class="registration">
+    <div class="container img-box">
+     <img class="img-box__donut"
+     srcset="
+     ./images/donut-min.png 196w,
+     ./images/donut@2x-min.png 392w
+     "
+     sizes="196px"
+     src="./images/donut-min.png"
+     alt="donut">
+     <img class="img-box__confetti"
+     srcset="
+     ./images/confetti-tablet-min.png 191w,
+     ./images/confetti-desktop-min.png 300w,
+     ./images/confetti@2x-tablet-min.png 384w,
+     ./images/confetti@2x-desktop-min.png 600w
+     "
+     sizes="(min-width: 1280px) 300px, (min-width: 768px) 191px, 191px"
+     src="./images/confetti-tablet-min.png"
+     alt="confetti">
+     <h2 class="registration__title--tablet">Registration</h2>
+    <div class="thumb">
+    <h2 class="registration__title">Registration</h2>
+    <div class="thumb__border">
+    <p class="registration__text">May 23, 11:00 New York</p>
+    <span class="registration__price">$ 699</span></div>
+    <form class="form">
+     <div class="form__inner">
+        <h3 class="form__title">Apply your personal info for registration</h3>
+        
+     <label for="name">
+         <input class="form__input" type="text" id="name" placeholder="Your name" pattern="^[a-zа-яA-ZА-Я]+\s[a-zа-яA-ZА-Я]+$" title="Ім'я має складатися із двох слів" >
+     </label>
+     <label for="phone">
+         <input class="form__input" type="tel" id="phone" placeholder="Phone number" pattern="^[0-9+]+$" title="Введіть лише цифри, починаючи з +380" >
+     </label>
+     <label for="email">
+         <input class="form__input form__input--email" type="email" id="email" placeholder="Email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+$" title="Адреса повинна мати @" > 
+     </label>
+ </div>
+     <div class="form__thumb">
+     <button class="form__button" type="submit">Register</button></div>
+    </form>
+   
+ </div>
+</div>
+   </section> 

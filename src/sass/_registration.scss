@@ -1,0 +1,234 @@
+.img-box {
+    position: relative;
+}
+.thumb {
+    padding: 32px 8px 32px 8px;
+    border-radius: 150px 150px 0px 0px ;
+    background-color: #FFFFF9;
+    box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
+     4px 4px 4px rgba(171, 129, 108, 0.15); 
+       @media screen and (min-width: 768px) {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 704px;
+            height: 260px;
+            border-radius: 150px;
+            z-index: 2;
+        }
+            @media screen and (min-width:1280px) {
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 822px;
+            }
+}
+
+.img-box__donut {
+   display: none;
+
+        @media screen and (min-width:768px) {
+            display: block;
+            position: absolute;
+            left: -125px;
+            top: 60px;
+            transform: translate(50%, -50%);
+        }
+            @media screen and (min-width:1280px) {
+                top: -20px;
+                left: 90px;
+                transform: translate(50%, -50%);
+                transform: rotate(-15deg);
+            }
+    
+    
+}
+.img-box__confetti {
+        display: none;
+
+        @media screen and (min-width:768px) {
+            display: block;
+            position: absolute;
+            right: -15px;
+            bottom: -145px;
+           
+        }
+            @media screen and (min-width:1280px) {
+                right: 0;
+                bottom: -295px;
+            }
+    
+} 
+
+
+.thumb__border {
+    margin-bottom: 8px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(171, 129, 108, 0.5);
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: space-around;
+            margin: 0;
+            padding: 0;
+            padding-right: 32px;
+            margin-right: 32px;
+            border: none;
+            border-right: 1px solid rgba(171, 129, 108, 0.5);
+        }
+        @media screen and (min-width:1280px) {
+            display: block;
+            padding-top: 23px;
+        }
+}
+.registration__title {
+    font-family: $font-title;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.25;
+    text-align: center;
+    color: #2E2520;
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+}
+.registration__title--tablet {
+    display: none;
+    font-family: $font-title;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.25;
+    text-align: center;
+    color: #2E2520;
+        @media screen and (min-width: 768px) {
+            display: block;
+            margin-bottom: 32px;
+        }
+        @media screen and (min-width:1280px) {
+            margin-bottom: 37px;
+        }
+
+}
+.registration__text {
+    font-family: $font-text;
+    width: 114px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    text-align: center;
+    color: #2E2520;
+        @media screen and (min-width:768px) {
+            width: 90px;
+            text-align: right;
+        }
+        @media screen and (min-width:1280px) {
+            width: 127px;
+            font-size: 20px;
+            line-height: 1.2;
+            margin-bottom: 32px;
+        }
+}
+.registration__price {
+    display: block;
+    font-family: $font-text;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    text-align: center;
+    color: #2E2520;
+        @media screen and (min-width:1280px) {
+            font-size: 20px;
+            line-height: 1.2;
+            margin-bottom: 59px;
+            text-align: end;
+        }
+}
+.form {
+    @media screen and (min-width:768px) {
+        display: flex;
+    align-items: center;
+    }
+}
+
+.form__title {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    max-width: 219px;
+    font-family: $font-text;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    color: #2E2520;
+        @media screen and (min-width:768px) {
+            margin-bottom: 16px;
+            margin-left: 0;
+            text-align: left;
+        }
+            @media screen and (min-width:1280px) {
+                margin-bottom: 13px;
+            }
+    }
+    .form__inner {
+        @media screen and (min-width:768px) {
+            display: flex;
+            flex-direction: column;
+            margin-right: 54px;
+        }
+        @media screen and (min-width:1280px) {
+            margin-right: 32px;
+        }
+    }
+    .form__input {
+        width: 265px;
+        color: #ab816c;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #AB816C;
+        margin-bottom: 22px;
+        background-color: transparent;
+        &--email {
+            margin-bottom: 32px;
+        }
+            @media screen and (min-width:768px) {
+                margin-bottom: 16px;
+                width: 237px;
+                &--email {
+                    margin-bottom: 0;
+                }
+            }
+            @media screen and (min-width:1280px) {
+                margin-bottom: 15px;
+                &--email {
+                    margin-bottom: 0;
+                }
+            }
+    }
+  .form__input:invalid {
+      border-color: red;
+  }
+    .form__input::placeholder {
+        font-family: $font-text;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        color: rgba(171, 129, 108, 0.5);
+    }
+    .form__button {
+        display: block;
+        margin: 0 auto;
+        width: 145px;
+        height: 40px;
+        border-radius: 25px;
+        border: none;
+        font-family: $font-title;
+        background-color: #AB816C;
+        color: white;
+        cursor: pointer;
+    }
