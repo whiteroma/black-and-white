@@ -52,7 +52,7 @@
             position: absolute;
             right: -15px;
             bottom: -145px;
-            // transform: translate(50%, -50%);
+           
         }
             @media screen and (min-width:1280px) {
                 right: 0;
@@ -85,6 +85,7 @@
         }
 }
 .registration__title {
+    font-family: $font-title;
     font-weight: 400;
     font-size: 24px;
     line-height: 1.25;
@@ -96,6 +97,7 @@
 }
 .registration__title--tablet {
     display: none;
+    font-family: $font-title;
     font-weight: 400;
     font-size: 24px;
     line-height: 1.25;
@@ -103,10 +105,15 @@
     color: #2E2520;
         @media screen and (min-width: 768px) {
             display: block;
-            margin-bottom: 8px;
+            margin-bottom: 32px;
         }
+        @media screen and (min-width:1280px) {
+            margin-bottom: 37px;
+        }
+
 }
 .registration__text {
+    font-family: $font-text;
     width: 114px;
     margin: 0 auto;
     margin-bottom: 20px;
@@ -128,6 +135,7 @@
 }
 .registration__price {
     display: block;
+    font-family: $font-text;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
@@ -152,6 +160,7 @@
     margin: 0 auto;
     margin-bottom: 20px;
     max-width: 219px;
+    font-family: $font-text;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
@@ -178,6 +187,7 @@
     }
     .form__input {
         width: 265px;
+        color: #ab816c;
         border: none;
         outline: none;
         border-bottom: 1px solid #AB816C;
@@ -204,6 +214,7 @@
       border-color: red;
   }
     .form__input::placeholder {
+        font-family: $font-text;
         font-weight: 400;
         font-size: 16px;
         line-height: 1.25;
@@ -216,6 +227,7 @@
         height: 40px;
         border-radius: 25px;
         border: none;
+        font-family: $font-title;
         background-color: #AB816C;
         color: white;
         cursor: pointer;
