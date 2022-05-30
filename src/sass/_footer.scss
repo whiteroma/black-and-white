@@ -8,7 +8,8 @@
 }
 
 .container {
-    max-width: 320px;
+
+    width: 320px;
     padding-left: 20px;
     padding-right: 20px;
     margin-left: auto;
@@ -17,18 +18,19 @@
 
 
 
-
     @media (min-width: 768px) {
-        max-width: 768px;
+        width: 768px;
     }
 
-    @media (min-width: 1200px) {
-        max-width: 1200px;
+    @media (min-width: 1280px) {
+        width: 1280px;
     }
 }
 
 address {
     font-style: normal;
+    position: relative;
+    z-index: 1;
 }
 
 // .footer-sm{
@@ -58,7 +60,7 @@ a {
         margin-bottom: 60px;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 1280px) {
         margin-bottom: 80px;
     }
 
@@ -80,7 +82,14 @@ a {
 .contact-list {
     display: flex;
     justify-content: space-between;
-    // z-index: 10;
+
+    @media (min-width: 768px) {
+        margin-right: 90px;
+    }
+
+    @media (min-width: 1280px) {
+        margin-right: 320px;
+    }
 
 }
 
@@ -92,7 +101,6 @@ a {
     font-size: 16px;
     line-height: 1.21;
     color: #2E2520;
-
 }
 
 .tel-icon {
@@ -117,12 +125,21 @@ a {
     height: 99px;
     background-image: url(../src/images/WheatMob.png);
     background-size: 113px 99px;
+    background-repeat: no-repeat;
 
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image: url(../src/images/WheatMob@2x.png);
-    }
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../src/images/WheatMob@2x.png);
+            
+
+
+
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/WheatMob@2x.png);
+            }
 
     @media (min-width: 768px) {
         width: 207px;
@@ -138,16 +155,18 @@ a {
         }
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 1280px) {
         width: 355px;
         height: 312px;
         background-size: 318px 312px;
         background-image: url(../src/images/WheatDerstop.png);
 
         @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(../src/images/WheatDerstop@2x.png);
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../src/images/WheatDerstop@2x.png);
+            }
+            
         }
     }
 
