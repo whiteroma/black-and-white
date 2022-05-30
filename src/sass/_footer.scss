@@ -14,10 +14,6 @@
     margin-left: auto;
     margin-right: auto;
 
-
-
-
-
     @media (min-width: 768px) {
         max-width: 768px;
     }
@@ -39,8 +35,6 @@ ul {
     padding: 0;
     list-style: none;
 }
-
-
 
 a {
     text-decoration: none;
@@ -74,6 +68,8 @@ a {
 }
 
 .footer-sm__icon {
+    width: 18px;
+    height: 18px;
     fill: #2E2520;
 }
 

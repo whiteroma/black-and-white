@@ -4,7 +4,11 @@
     justify-content: flex-start;
 }
 
-
+.desctop{
+    @media(min-width: 1280px){
+        margin: 0;
+    }
+}
 
 /* Заголовки*/
 .hero__title {
@@ -62,7 +66,7 @@
 /*---------END---------*/
 
 /*Кнопка регистрации*/
-.button {
+.hero__button{
     display: block;
     min-width: 145px;
     height: 40px;
@@ -110,15 +114,17 @@
     width: 16px;
     height: 16px;
     margin-right: 20px;
-    
+    fill: $color-text;
 }
 .socials__instagram {
     width: 16px;
     height: 16px;
     margin-right: 20px;
+    fill: $color-text;
 }
 .socials__facebook {
     width: 16px;
     height: 16px;
+    fill: $color-text;
 }
 /*------END-----------*/
