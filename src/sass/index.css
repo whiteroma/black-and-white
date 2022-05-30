@@ -40,6 +40,8 @@
     position: relative;
     display: flex;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 704px;
     height: 260px;
     border-radius: 150px;
@@ -61,14 +63,17 @@
   .img-box__donut {
     display: block;
     position: absolute;
-    left: 0;
-    top: -60px;
+    left: -125px;
+    top: 60px;
+    transform: translate(50%, -50%);
   }
 }
 @media screen and (min-width: 1280px) {
   .img-box__donut {
-    top: -30px;
-    left: 130px;
+    top: -20px;
+    left: 90px;
+    transform: translate(50%, -50%);
+    transform: rotate(-15deg);
   }
 }
 
@@ -79,8 +84,8 @@
   .img-box__confetti {
     display: block;
     position: absolute;
-    right: 0;
-    bottom: -125px;
+    right: -15px;
+    bottom: -145px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -108,6 +113,12 @@
     margin-right: 32px;
     border: none;
     border-right: 1px solid rgba(171, 129, 108, 0.5);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .thumb__border {
+    display: block;
+    padding-top: 23px;
   }
 }
 
@@ -155,6 +166,14 @@
     text-align: right;
   }
 }
+@media screen and (min-width: 1280px) {
+  .registration__text {
+    width: 127px;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 32px;
+  }
+}
 
 .registration__price {
   display: block;
@@ -163,6 +182,14 @@
   line-height: 1.22;
   text-align: center;
   color: #2E2520;
+}
+@media screen and (min-width: 1280px) {
+  .registration__price {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 59px;
+    text-align: end;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -190,12 +217,22 @@
     text-align: left;
   }
 }
+@media screen and (min-width: 1280px) {
+  .form__title {
+    margin-bottom: 13px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .form__inner {
     display: flex;
     flex-direction: column;
     margin-right: 54px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .form__inner {
+    margin-right: 32px;
   }
 }
 
@@ -214,6 +251,14 @@
   .form__input {
     margin-bottom: 16px;
     width: 237px;
+  }
+  .form__input--email {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .form__input {
+    margin-bottom: 15px;
   }
   .form__input--email {
     margin-bottom: 0;
