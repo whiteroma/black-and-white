@@ -42,6 +42,7 @@ a {
     text-decoration: none;
 }
 
+
 .footer-sm__list {
     display: flex;
     justify-content: center;
@@ -49,6 +50,7 @@ a {
     margin-bottom: 32px;
     padding: 0px;
     gap: 16px;
+    
 
     @media (min-width: 768px) {
         margin-bottom: 60px;
@@ -72,6 +74,7 @@ a {
 
 .footer-sm__icon {
     fill: #2E2520;
+    height: 100%;
 }
 
 .contact-list {
