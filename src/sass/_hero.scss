@@ -1,0 +1,124 @@
+
+.hero {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+
+/* Заголовки*/
+.hero__title {
+    font-family: 'Caveat Brush';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.27;
+    color: #2E2520;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 8px;
+    margin-top: 30.72px;
+
+    @media screen and (min-width:768px){
+        text-align: left;
+       margin-top: 16px;
+    }
+    @media screen and (min-width:1280px){
+        font-family: 'Caveat Brush';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 1.01;
+        color: #2E2520;
+        margin-top: 42px;
+        margin-bottom: 16px;
+
+    }
+}
+.hero__subtitle {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #2E2520;
+    text-align: center;
+    margin-bottom: 32px;
+    margin-top: 0;
+    padding: 0;
+
+    @media screen and (min-width:768px){
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    @media screen and (min-width:1280px){
+        ont-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.21;
+        color: #2E2520;
+    }
+   
+}
+/*---------END---------*/
+
+/*Кнопка регистрации*/
+.button {
+    display: block;
+    min-width: 145px;
+    height: 40px;
+    margin: 0 auto;
+    
+    background-color: #AB816C;
+    border-color: transparent;
+    border-radius: 25px;
+   
+    font-family: 'Caveat Brush';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.28;
+    color: #FFFFFF;
+
+    @media screen and (min-width:768px){
+        margin: 0;
+    }
+  
+}
+/*----------END------------*/
+
+/*Иконки социальной сети*/
+.socials{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 0;
+    padding: 0;
+
+    @media screen  and (min-width:768px){
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
+
+    @media screen  and (min-width:1280px){
+        justify-content: flex-start;
+        margin-top: 32px;
+    }
+  
+}
+.socials__twiter {
+    width: 16px;
+    height: 16px;
+    margin-right: 20px;
+    
+}
+.socials__instagram {
+    width: 16px;
+    height: 16px;
+    margin-right: 20px;
+}
+.socials__facebook {
+    width: 16px;
+    height: 16px;
+}
+/*------END-----------*/
