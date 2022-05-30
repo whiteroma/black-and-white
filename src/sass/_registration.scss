@@ -11,6 +11,8 @@
             position: relative;
             display: flex;
             justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
             max-width: 704px;
             height: 260px;
             border-radius: 150px;
@@ -29,12 +31,15 @@
         @media screen and (min-width:768px) {
             display: block;
             position: absolute;
-            left: 0;
-            top: -60px;
+            left: -125px;
+            top: 60px;
+            transform: translate(50%, -50%);
         }
             @media screen and (min-width:1280px) {
-                top: -30px;
-                left: 130px;
+                top: -20px;
+                left: 90px;
+                transform: translate(50%, -50%);
+                transform: rotate(-15deg);
             }
     
     
@@ -45,8 +50,9 @@
         @media screen and (min-width:768px) {
             display: block;
             position: absolute;
-            right: 0;
-            bottom: -125px;
+            right: -15px;
+            bottom: -145px;
+           
         }
             @media screen and (min-width:1280px) {
                 right: 0;
@@ -73,8 +79,13 @@
             border: none;
             border-right: 1px solid rgba(171, 129, 108, 0.5);
         }
+        @media screen and (min-width:1280px) {
+            display: block;
+            padding-top: 23px;
+        }
 }
 .registration__title {
+    font-family: $font-title;
     font-weight: 400;
     font-size: 24px;
     line-height: 1.25;
@@ -86,6 +97,7 @@
 }
 .registration__title--tablet {
     display: none;
+    font-family: $font-title;
     font-weight: 400;
     font-size: 24px;
     line-height: 1.25;
@@ -93,10 +105,15 @@
     color: #2E2520;
         @media screen and (min-width: 768px) {
             display: block;
-            margin-bottom: 8px;
+            margin-bottom: 32px;
         }
+        @media screen and (min-width:1280px) {
+            margin-bottom: 37px;
+        }
+
 }
 .registration__text {
+    font-family: $font-text;
     width: 114px;
     margin: 0 auto;
     margin-bottom: 20px;
@@ -109,14 +126,27 @@
             width: 90px;
             text-align: right;
         }
+        @media screen and (min-width:1280px) {
+            width: 127px;
+            font-size: 20px;
+            line-height: 1.2;
+            margin-bottom: 32px;
+        }
 }
 .registration__price {
     display: block;
+    font-family: $font-text;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
     text-align: center;
     color: #2E2520;
+        @media screen and (min-width:1280px) {
+            font-size: 20px;
+            line-height: 1.2;
+            margin-bottom: 59px;
+            text-align: end;
+        }
 }
 .form {
     @media screen and (min-width:768px) {
@@ -130,6 +160,7 @@
     margin: 0 auto;
     margin-bottom: 20px;
     max-width: 219px;
+    font-family: $font-text;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
@@ -140,6 +171,9 @@
             margin-left: 0;
             text-align: left;
         }
+            @media screen and (min-width:1280px) {
+                margin-bottom: 13px;
+            }
     }
     .form__inner {
         @media screen and (min-width:768px) {
@@ -147,10 +181,13 @@
             flex-direction: column;
             margin-right: 54px;
         }
-       
+        @media screen and (min-width:1280px) {
+            margin-right: 32px;
+        }
     }
     .form__input {
         width: 265px;
+        color: #ab816c;
         border: none;
         outline: none;
         border-bottom: 1px solid #AB816C;
@@ -166,11 +203,18 @@
                     margin-bottom: 0;
                 }
             }
+            @media screen and (min-width:1280px) {
+                margin-bottom: 15px;
+                &--email {
+                    margin-bottom: 0;
+                }
+            }
     }
   .form__input:invalid {
       border-color: red;
   }
     .form__input::placeholder {
+        font-family: $font-text;
         font-weight: 400;
         font-size: 16px;
         line-height: 1.25;
@@ -183,8 +227,8 @@
         height: 40px;
         border-radius: 25px;
         border: none;
+        font-family: $font-title;
         background-color: #AB816C;
         color: white;
         cursor: pointer;
     }
-  
