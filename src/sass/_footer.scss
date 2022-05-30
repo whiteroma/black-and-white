@@ -115,26 +115,26 @@ a {
     bottom: 0;
     width: 113px;
     height: 99px;
-    background-image: url(../src/images/WheatMob.png);
+    background-image: url(../images/WheatMob.png);
     background-size: 113px 99px;
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: url(../src/images/WheatMob@2x.png);
+        background-image: url(../images/WheatMob@2x.png);
     }
 
     @media (min-width: 768px) {
         width: 207px;
         height: 182px;
-        background-image: url(../src/images/WheatTab.png);
+        background-image: url(../images/WheatTab.png);
         background-size: 207px 182px;
 
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url(../src/images/WheatTab@2x.png);
+            background-image: url(../images/WheatTab@2x.png);
         }
     }
 
@@ -142,12 +142,12 @@ a {
         width: 355px;
         height: 312px;
         background-size: 318px 312px;
-        background-image: url(../src/images/WheatDerstop.png);
+        background-image: url(../images/WheatDerstop.png);
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url(../src/images/WheatDerstop@2x.png);
+            background-image: url(../images/WheatDerstop@2x.png);
         }
     }
 
