@@ -1,0 +1,56 @@
+.swiper {
+    position: relative;
+    width: 100%;
+}
+
+.swiper-pagination {
+    text-align: center;
+
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.21;
+
+    color: #AB816C;
+
+    @media screen and (min-width: 1280px) {
+        font-size: 16px;
+        line-height: 1.25;
+    }
+}
+
+.swiper-button-prev::after {
+    content: "";
+    position: absolute;
+    left: 84px;
+    bottom: 8px;
+    width: 35px;
+    border-bottom: 1px solid #AB816C;
+
+    @media screen and (min-width: 768px) {
+        left: 307px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        left: 565px;
+        bottom: 9px;
+    }
+}
+
+.swiper-button-next::after {
+    content: "";
+    position: absolute;
+    left: 169px;
+    bottom: 8px;
+    width: 35px;
+    border-bottom: 1px solid #AB816C;
+
+    @media screen and (min-width: 768px) {
+        left: 392px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        left: 650px;
+        bottom: 9px;
+    }
+}
