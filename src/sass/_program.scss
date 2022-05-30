@@ -38,9 +38,12 @@ p {
 }
 
 .program {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 16px;
     flex-basis: 50%;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 35px;
+    }
 }
 
 .program__list{
@@ -66,7 +69,9 @@ p {
 
     @media screen and (min-width: 768px) and (max-width: 1279px) {
         margin-right: 38px;
-    }
+        margin-top: 40px;
+        }
+    
 
     @media screen and (min-width: 1280px) {
         margin-right: 142px;
@@ -122,11 +127,6 @@ p {
     @media screen and (min-width: 768px) {
         margin-left: 0;
     }
-
-    @media screen and (min-width: 1280px) {
-        margin-left: 50px;
-        margin-right: 50px;
-    }
 }
 
 .program__events-item {
@@ -155,15 +155,15 @@ p {
     @media screen and (min-width: 1280px) {
         width: 180px;
         height: 180px;
+        flex-basis: calc(50% - 80px);
+        margin-left: 80px;
     }
 
     &:nth-child(odd) {
         margin-top: 34px;
 
-        @media screen and (min-width: 768px) {
-        }
-
         @media screen and (min-width: 1280px) {
+            margin-left: 0;
         }
     }
 
@@ -244,15 +244,12 @@ p {
 }
 
 .read-more {
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 20px;
-
+    display: flex;
     font-family: 'Caveat Brush';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 1.277;
+    line-height: 1.28;
 
     color: #AB816C;
 
@@ -261,32 +258,38 @@ p {
     }
 }
 
-p {
-    margin: 20px 0;
+.read-more:hover, .read-more .more:hover, .read-more .less:hover,
+.read-more:focus, .read-more .more:focus, .read-more .less:focus {
+    text-decoration: underline;
 }
 
-.extra-text {
+.extra-text, .less {
     display: none;
 
     @media screen and (min-width: 1280px) {
-
         display: inline;
     }
 }
 
-#read-more:checked~.extra-text {
+.extra-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+
+    color: #2E2520;
+}
+
+#read-more-program:checked~.extra-text {
     display: block;
 }
 
-.less {
+#read-more-program:checked~.read-more .more {
     display: none;
 }
 
-#read-more:checked~.read-more .more {
-    display: none;
-}
-
-#read-more:checked~.read-more .less {
+#read-more-program:checked~.read-more .less {
     display: inline;
 }
 
