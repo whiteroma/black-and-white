@@ -8,28 +8,27 @@
 }
 
 .container {
-    max-width: 320px;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 320px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 
     @media (min-width: 768px) {
-        max-width: 768px;
+        width: 768px;
     }
 
-    @media (min-width: 1200px) {
-        max-width: 1200px;
+    @media (min-width: 1280px) {
+        width: 1280px;
     }
 }
 
 address {
     font-style: normal;
+    position: relative;
+    z-index: 1;
 }
 
-// .footer-sm{
-
-// }
 ul {
     margin: 0;
     padding: 0;
@@ -40,6 +39,7 @@ a {
     text-decoration: none;
 }
 
+
 .footer-sm__list {
     display: flex;
     justify-content: center;
@@ -47,12 +47,13 @@ a {
     margin-bottom: 32px;
     padding: 0px;
     gap: 16px;
+    
 
     @media (min-width: 768px) {
         margin-bottom: 60px;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 1280px) {
         margin-bottom: 80px;
     }
 
@@ -65,19 +66,27 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .footer-sm__icon {
     width: 18px;
     height: 18px;
     fill: #2E2520;
+    height: 100%;
 }
 
 .contact-list {
     display: flex;
     justify-content: space-between;
-    // z-index: 10;
 
+    @media (min-width: 768px) {
+        margin-right: 90px;
+    }
+
+    @media (min-width: 1280px) {
+        margin-right: 320px;
+    }
 }
 
 .contact-list__link {
@@ -109,10 +118,14 @@ a {
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 113px;
-    height: 99px;
+    width: 84px;
+    height: 73px;
+
     background-image: url(../images/WheatMob.png);
-    background-size: 113px 99px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -121,10 +134,10 @@ a {
     }
 
     @media (min-width: 768px) {
-        width: 207px;
-        height: 182px;
+        width: 184px;
+        height: 90px;
         background-image: url(../images/WheatTab.png);
-        background-size: 207px 182px;
+        
 
 
         @media (min-device-pixel-ratio: 2),
@@ -134,10 +147,9 @@ a {
         }
     }
 
-    @media (min-width: 1200px) {
-        width: 355px;
-        height: 312px;
-        background-size: 318px 312px;
+    @media (min-width: 1280px) {
+        width: 302px;
+        height: 175px;
         background-image: url(../images/WheatDerstop.png);
 
         @media (min-device-pixel-ratio: 2),

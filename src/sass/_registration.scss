@@ -1,3 +1,12 @@
+.registration {
+    padding-top: 32px;
+        @media screen and (min-width: 768px) {
+            padding-top: 40px;
+        }
+            @media screen and (min-width:1280px) {
+                padding-top: 60px;
+            }  
+}
 .img-box {
     position: relative;
 }
@@ -31,14 +40,14 @@
         @media screen and (min-width:768px) {
             display: block;
             position: absolute;
-            left: -125px;
-            top: 60px;
+            left: -110px;
+            top: 90px;
             transform: translate(50%, -50%);
         }
             @media screen and (min-width:1280px) {
-                top: -20px;
-                left: 90px;
-                transform: translate(50%, -50%);
+                top: 120px;
+                left: -50px;
+                // transform: translate(50%, -50%);
                 transform: rotate(-15deg);
             }
     
@@ -85,7 +94,7 @@
         }
 }
 .registration__title {
-    font-family: $font-title;
+    font-family:$font-title;
     font-weight: 400;
     font-size: 24px;
     line-height: 1.25;
