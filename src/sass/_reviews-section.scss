@@ -15,23 +15,23 @@ img {
     padding: 0;
 }
 
-.container {
-    margin: 0 auto;
-    padding: 0 10px;
-    width: 320px;    
-
-    @media screen and (min-width: 768px) {        
-        padding: 0 15px;
-        width: 768px;
-    }
-
-    @media screen and (min-width: 1280px) {        
-        width: 1280px;
-    }
-}
-
 .reviews-section {
-    min-width: 320px;    
+    min-width: 320px;
+    padding-top: 20px;
+
+    .container {
+        margin: 0 auto;
+        padding: 0 15px;
+        width: 320px;
+    
+        @media screen and (min-width: 768px) {            
+            width: 768px;
+        }
+    
+        @media screen and (min-width: 1280px) {
+            width: 1280px;
+        }
+    }
 
     &__title {        
         text-align: center;
@@ -63,14 +63,16 @@ img {
     }
     
     @media screen and (min-width: 768px) {
+        
+        padding-top: 50px;
 
         &__list {
-            margin-top: 60px;
-            margin-bottom: 433px;
+            margin-top: 60px;            
         }
 
-        &__item {
-            position: relative;            
+        &__item.swiper-slide-active {
+            margin-left: -184px;
+            margin-right: -184px;
         }
         
         &__item.swiper-slide-prev {
@@ -87,6 +89,8 @@ img {
     }
 
     @media screen and (min-width: 1280px) {
+
+        padding-top: 77px;
         
         &__title {
             font-size: 36px;
@@ -94,9 +98,13 @@ img {
         }
 
         &__list {
-            margin-top: 178px;
-            margin-bottom: 391px;
-        }        
+            margin-top: 178px;            
+        }
+        
+        &__item.swiper-slide-active {
+            margin-left: -272px;
+            margin-right: -272px;
+        }
 
         &__item.swiper-slide-prev {
             margin-top: -143px;
@@ -157,17 +165,10 @@ img {
         display: none;
     }
 
-    @media screen and (min-width: 768px) {
-        .swiper-slide-active & {
-            position: absolute;
-            left: 50%;
-            top: 0;
-            transform: translate(-50%, 0);            
-            margin-bottom: 0;            
-        }
+    @media screen and (min-width: 768px) {        
 
         &__photo {
-            width: 151px;
+            width: 152px;
         }
         
         .swiper-slide-active &__photo {
@@ -184,7 +185,7 @@ img {
         }
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1280px) {        
 
         &__photo {
             width: 285px;
@@ -200,7 +201,7 @@ img {
         }
 
         &__text {
-            width: 1010px;
+            width: 1000px;
             font-size: 18px;
             line-height: 1.22;
         }
@@ -229,36 +230,36 @@ img {
 
 .swiper-button-prev::after {
     content: "";
-    position: absolute;
-    left: 90px;
+    position: absolute;    
+    left: 84px;
     bottom: 8px;
     width: 35px;
     border-bottom: 1px solid #AB816C;
 
     @media screen and (min-width: 768px) {
-        left: 308px;
+        left: 307px;
     }
 
     @media screen and (min-width: 1280px) {
-        left: 564px;
+        left: 523px;
         bottom: 9px;
     }
 }
 
 .swiper-button-next::after {
     content: "";
-    position: absolute;
-    left: 175px;
+    position: absolute;    
+    left: 169px;
     bottom: 8px;
     width: 35px;
     border-bottom: 1px solid #AB816C;
 
     @media screen and (min-width: 768px) {
-        left: 393px;
+        left: 392px;
     }
 
     @media screen and (min-width: 1280px) {
-        left: 649px;
+        left: 608px;
         bottom: 9px;
     }
 }
