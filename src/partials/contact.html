@@ -7,17 +7,18 @@
                 <li class="contact__item">
                     <label for="mail" class="contact__label">
                         <input type="email" name="Question" id="mail" placeholder="Email" class="contact__input"
-                            required>
+                            pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+$" title="Адреса повинна мати @" required
+                            autocomplete="off">
                     </label>
                 </li>
                 <li class="contact__item">
                     <label for="text">
                         <input type="text" name="Question" id="text" placeholder="Type your question"
-                            class="contact__input" required>
+                            class="contact__input" required autocomplete="off">
                     </label>
                 </li>
             </ul>
-            <button type="submit" class="button">Send</button>
+            <button type="submit" class="contact__button">Send</button>
         </form>
     </div>
 </section>
