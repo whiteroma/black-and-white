@@ -36,14 +36,14 @@ img {
     &__title {        
         text-align: center;
     
-        font-family: 'Caveat Brush';
+        font-family: $font-title;
         font-style: normal;
         font-weight: 400;
         font-size: 24px;
         line-height: 1.25;
         text-align: center;
     
-        color: #2E2520;
+        color: $color-text;
     }
 
     &__list {
@@ -53,19 +53,9 @@ img {
         margin-bottom: 32px;
     }
 
-    &__item {
-        // opacity: 0;
-        // pointer-events: none;
-        // visibility: hidden;
+    &__item {        
         display: none;
     }
-
-    // &__item--active {
-    //     opacity: 1;
-    //     visibility: visible;
-    //     pointer-events: visible;
-    //     margin: 0 10px;        
-    // }
 
     &__item--active {
         display: block;
@@ -134,8 +124,8 @@ img {
 
 .article {    
     text-align: center;
-    font-family: 'Montserrat';
-    color: #2E2520;    
+    font-family: $font-text;
+    color: $color-text;    
 
     &__rate {
         display: flex;
@@ -171,17 +161,11 @@ img {
         line-height: 1.25;
     }
 
-    .reviews-section__item--next &__text {
-        // opacity: 0;
-        // pointer-events: none;
-        // visibility: hidden;
+    .reviews-section__item--next &__text {        
         display: none;
     }
 
-    .reviews-section__item--prev &__text {
-        // opacity: 0;
-        // pointer-events: none;
-        // visibility: hidden;
+    .reviews-section__item--prev &__text {        
         display: none;
     }
 
