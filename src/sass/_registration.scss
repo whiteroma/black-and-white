@@ -40,14 +40,13 @@
         @media screen and (min-width:768px) {
             display: block;
             position: absolute;
-            left: -110px;
-            top: 90px;
+            left: -140px;
+            top: 85px;
             transform: translate(50%, -50%);
         }
             @media screen and (min-width:1280px) {
-                top: 120px;
-                left: -50px;
-                // transform: translate(50%, -50%);
+                top: 0px;
+                left: 83px;
                 transform: rotate(-15deg);
             }
     
