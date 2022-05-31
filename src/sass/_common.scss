@@ -4,4 +4,11 @@
 body {
     font-family: $font-text;
     color: $color-text;
+    cursor: url(/src/images/cursor.png), auto;
+}
+a {
+    cursor: url(/src/images/tap.png), pointer;
+}
+button {
+    cursor: url(/src/images/tap.png), pointer;
 }
