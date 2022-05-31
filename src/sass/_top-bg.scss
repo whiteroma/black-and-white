@@ -19,6 +19,26 @@
         }
       }
 
+      @media screen and (min-width: 768px) {
+        &::after {
+          content: "";
+          position: absolute;
+          z-index: 1;
+          right: 0;
+          top: 0;
+          width: 378px;
+          height: 361px;
+          background-image: url(../images/header/donuts-tablet@1.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+          
+          @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(../images/header/donuts-tablet@1.png);
+            background-repeat: no-repeat;
+          }
+        }
+      }
+
       @media screen and (max-width: 767.98px) {
         &::after {
           content: "";
