@@ -36,14 +36,14 @@ img {
     &__title {        
         text-align: center;
     
-        font-family: 'Caveat Brush';
+        font-family: $font-title;
         font-style: normal;
         font-weight: 400;
         font-size: 24px;
         line-height: 1.25;
         text-align: center;
     
-        color: #2E2520;
+        color: $color-text;
     }
 
     &__list {
@@ -53,11 +53,11 @@ img {
         margin-bottom: 32px;
     }
 
-    &__item {
-        display: none;        
+    &__item {        
+        display: none;
     }
 
-    &__item.swiper-slide-active {
+    &__item--active {
         display: block;
         margin: 0 10px;
     }
@@ -70,18 +70,22 @@ img {
             margin-top: 60px;            
         }
 
-        &__item.swiper-slide-active {
+        &__item {
+            display: block;
+        }
+
+        &__item--active {
             margin-left: -184px;
             margin-right: -184px;
         }
         
-        &__item.swiper-slide-prev {
+        &__item--prev {
             display: block;
             margin-left: 17px;
             margin-top: -76px;
         }
         
-        &__item.swiper-slide-next {
+        &__item--next {
             display: block;
             margin-right: 17px;
             margin-top: -76px;
@@ -101,17 +105,17 @@ img {
             margin-top: 178px;            
         }
         
-        &__item.swiper-slide-active {
+        &__item--active {
             margin-left: -272px;
             margin-right: -272px;
         }
 
-        &__item.swiper-slide-prev {
+        &__item--prev {
             margin-top: -143px;
             margin-left: 111px;            
         }        
 
-        &__item.swiper-slide-next {
+        &__item--next {
             margin-top: -143px;
             margin-right: 111px;
         }
@@ -120,8 +124,8 @@ img {
 
 .article {    
     text-align: center;
-    font-family: 'Montserrat';
-    color: #2E2520;
+    font-family: $font-text;
+    color: $color-text;    
 
     &__rate {
         display: flex;
@@ -147,7 +151,7 @@ img {
         line-height: 1.21;
     }
 
-    .swiper-slide-active &__title {
+    .reviews-section__item--active &__title {
         margin-bottom: 8px;
     }
 
@@ -157,11 +161,11 @@ img {
         line-height: 1.25;
     }
 
-    .swiper-slide-next &__text {
+    .reviews-section__item--next &__text {        
         display: none;
     }
 
-    .swiper-slide-prev &__text {
+    .reviews-section__item--prev &__text {        
         display: none;
     }
 
@@ -171,7 +175,7 @@ img {
             width: 152px;
         }
         
-        .swiper-slide-active &__photo {
+        .reviews-section__item--active &__photo {
             width: 336px;
             margin: 0 auto;
         }
@@ -180,7 +184,7 @@ img {
             width: 704px;            
         }
 
-        .swiper-slide-active &__title {
+        .reviews-section__item--active &__title {
             margin-bottom: 20px;
         }
     }
@@ -191,7 +195,7 @@ img {
             width: 285px;
         }
         
-        .swiper-slide-active &__photo {
+        .reviews-section__item--active &__photo {
             width: 394px;
         }
 
@@ -205,61 +209,5 @@ img {
             font-size: 18px;
             line-height: 1.22;
         }
-    }
-}
-
-.swiper {
-    position: relative;
-}
-
-.swiper-pagination {    
-    text-align: center;
-
-    font-family: 'Montserrat';   
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.21;
-
-    color: #AB816C;
-
-    @media screen and (min-width: 1280px) {
-        font-size: 16px;
-        line-height: 1.25;
-    }
-}
-
-.swiper-button-prev::after {
-    content: "";
-    position: absolute;    
-    left: 84px;
-    bottom: 8px;
-    width: 35px;
-    border-bottom: 1px solid #AB816C;
-
-    @media screen and (min-width: 768px) {
-        left: 307px;
-    }
-
-    @media screen and (min-width: 1280px) {
-        left: 523px;
-        bottom: 9px;
-    }
-}
-
-.swiper-button-next::after {
-    content: "";
-    position: absolute;    
-    left: 169px;
-    bottom: 8px;
-    width: 35px;
-    border-bottom: 1px solid #AB816C;
-
-    @media screen and (min-width: 768px) {
-        left: 392px;
-    }
-
-    @media screen and (min-width: 1280px) {
-        left: 608px;
-        bottom: 9px;
     }
 }
