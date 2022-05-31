@@ -81,14 +81,14 @@ p {
 .program__title {
     margin-bottom: 8px;
 
-    font-family: 'Caveat Brush';
+    font-family: $font-title;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 1.25;
     text-align: center;
 
-    color: #2E2520;
+    color: $color-text;
 
     @media screen and (min-width: 768px) {
         text-align: start;
@@ -103,13 +103,13 @@ p {
 .program__text {
     margin-bottom: 8px;
 
-    font-family: 'Montserrat';
+    font-family: $font-text;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
 
-    color: #2E2520;
+    color: $color-text;
 
     @media screen and (min-width: 1280px) {
         font-size: 18px;
@@ -142,7 +142,7 @@ p {
     width: 130px;
     height: 130px;
     border-radius: 50%;
-    background: #FEF3E4;
+    background: $color-menu-bg;
     box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
 
     @media screen and (min-width: 768px) {
@@ -205,18 +205,22 @@ p {
     margin-top: 50px;
     margin-bottom: 4px;
     
-    font-family: 'Caveat Brush';
+    font-family: $font-title;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.28;
     text-align: center;
 
-    color: #000000;
+    color: $color-black;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 14px;
+    }
 
     @media screen and (min-width: 1280px) {
         font-size: 24px;
         line-height: 1.25;
+        margin-bottom: 16px;
     }
 }
 
@@ -224,14 +228,14 @@ p {
     margin-bottom: 8px;
     margin-top: 0;
 
-    font-family: 'Montserrat';
+    font-family: $font-text;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.21;
     text-align: center;
 
-    color: #000000;
+    color: $color-black;
 
     @media screen and (min-width: 1280px) {
         font-size: 16px;
@@ -245,13 +249,13 @@ p {
 
 .read-more {
     display: flex;
-    font-family: 'Caveat Brush';
+    font-family: $font-title;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.28;
 
-    color: #AB816C;
+    color: $color-button-bg816C;
 
     @media screen and (min-width: 1280px) {
         display: none;
@@ -272,13 +276,13 @@ p {
 }
 
 .extra-text{
-    font-family: 'Montserrat';
+    font-family: $font-text;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
 
-    color: #2E2520;
+    color: $color-text;
 }
 
 #read-more-program:checked~.extra-text {
