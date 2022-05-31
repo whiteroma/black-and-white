@@ -44,6 +44,10 @@ p {
     @media screen and (min-width: 768px) {
         margin-top: 35px;
     }
+
+    @media screen and (min-width: 1280px) {
+         margin-left: 123px;
+    }
 }
 
 .program__list{
@@ -163,7 +167,7 @@ p {
         margin-top: 34px;
 
         @media screen and (min-width: 1280px) {
-            margin-left: 0;
+            margin-left: -70px;
         }
     }
 
@@ -184,21 +188,60 @@ p {
     }
 }
 
-
 .program__events-item--donut1::before {
-    background-image: url('../images/donut1.png');
+    width: 80px;
+    height: 80px;
+    background-image: url('../images/donut1-min.png');
+    background-size: 80px 80px;
+}
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .program__events-item--donut1::before {
+                background-image: url('../images/donut1@2x-min.png');
+            }
 }
 
 .program__events-item--donut2::before {
-    background-image: url('../images/donut2.png');
+    width: 80px;
+    height: 80px;
+    background-image: url('../images/donut2-min.png');
+    background-size: 80px 80px;
+}
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .program__events-item--donut1::before {
+                background-image: url('../images/donut2@2x-min.png');
+            }
 }
 
 .program__events-item--donut3::before {
-    background-image: url('../images/donut3.png');
+    width: 80px;
+    height: 80px;
+    background-image: url('../images/donut3-min.png');
+    background-size: 80px 80px;
+}
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .program__events-item--donut1::before {
+                background-image: url('../images/donut3@2x-min.png');
+            }
 }
 
 .program__events-item--donut4::before {
-    background-image: url('../images/donut4.png');
+    width: 80px;
+    height: 80px;
+    background-image: url('../images/donut4-min.png');
+    background-size: 80px 80px;
+}
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .program__events-item--donut1::before {
+                background-image: url('../images/donut4@2x-min.png');
+            }
 }
 
 .program__events-item--caption {
@@ -255,7 +298,7 @@ p {
     font-size: 18px;
     line-height: 1.28;
 
-    color: $color-button-bg816C;
+    color: $color-button-bg;
 
     @media screen and (min-width: 1280px) {
         display: none;
@@ -275,7 +318,7 @@ p {
     }
 }
 
-.extra-text{
+.extra-text {
     font-family: $font-text;
     font-style: normal;
     font-weight: 400;
