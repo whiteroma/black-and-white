@@ -44,6 +44,10 @@ p {
     @media screen and (min-width: 768px) {
         margin-top: 35px;
     }
+
+    @media screen and (min-width: 1280px) {
+         margin-left: 123px;
+    }
 }
 
 .program__list{
@@ -81,14 +85,14 @@ p {
 .program__title {
     margin-bottom: 8px;
 
-    font-family: 'Caveat Brush';
+    font-family: $font-title;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 1.25;
     text-align: center;
 
-    color: #2E2520;
+    color: $color-text;
 
     @media screen and (min-width: 768px) {
         text-align: start;
@@ -103,13 +107,13 @@ p {
 .program__text {
     margin-bottom: 8px;
 
-    font-family: 'Montserrat';
+    font-family: $font-text;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
 
-    color: #2E2520;
+    color: $color-text;
 
     @media screen and (min-width: 1280px) {
         font-size: 18px;
@@ -142,7 +146,7 @@ p {
     width: 130px;
     height: 130px;
     border-radius: 50%;
-    background: #FEF3E4;
+    background: $color-menu-bg;
     box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
 
     @media screen and (min-width: 768px) {
@@ -155,15 +159,15 @@ p {
     @media screen and (min-width: 1280px) {
         width: 180px;
         height: 180px;
-        flex-basis: calc(50% - 80px);
-        margin-left: 80px;
+        flex-basis: calc(50% - 95px);
+        margin-left: 150px;
     }
 
     &:nth-child(odd) {
         margin-top: 34px;
 
         @media screen and (min-width: 1280px) {
-            margin-left: 0;
+            margin-left: -70px;
         }
     }
 
@@ -184,39 +188,82 @@ p {
     }
 }
 
-
 .program__events-item--donut1::before {
-    background-image: url('../images/donut1.png');
+    width: 80px;
+    height: 80px;
+    background-image: url('../images/donut1-min.png');
+    background-size: 80px 80px;
+}
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .program__events-item--donut1::before {
+                background-image: url('../images/donut1@2x-min.png');
+            }
 }
 
 .program__events-item--donut2::before {
-    background-image: url('../images/donut2.png');
+    width: 80px;
+    height: 80px;
+    background-image: url('../images/donut2-min.png');
+    background-size: 80px 80px;
+}
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .program__events-item--donut1::before {
+                background-image: url('../images/donut2@2x-min.png');
+            }
 }
 
 .program__events-item--donut3::before {
-    background-image: url('../images/donut3.png');
+    width: 80px;
+    height: 80px;
+    background-image: url('../images/donut3-min.png');
+    background-size: 80px 80px;
+}
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .program__events-item--donut1::before {
+                background-image: url('../images/donut3@2x-min.png');
+            }
 }
 
 .program__events-item--donut4::before {
-    background-image: url('../images/donut4.png');
+    width: 80px;
+    height: 80px;
+    background-image: url('../images/donut4-min.png');
+    background-size: 80px 80px;
+}
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .program__events-item--donut1::before {
+                background-image: url('../images/donut4@2x-min.png');
+            }
 }
 
 .program__events-item--caption {
     margin-top: 50px;
     margin-bottom: 4px;
     
-    font-family: 'Caveat Brush';
+    font-family: $font-title;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.28;
     text-align: center;
 
-    color: #000000;
+    color: $color-black;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 14px;
+    }
 
     @media screen and (min-width: 1280px) {
         font-size: 24px;
         line-height: 1.25;
+        margin-bottom: 16px;
     }
 }
 
@@ -224,14 +271,14 @@ p {
     margin-bottom: 8px;
     margin-top: 0;
 
-    font-family: 'Montserrat';
+    font-family: $font-text;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.21;
     text-align: center;
 
-    color: #000000;
+    color: $color-black;
 
     @media screen and (min-width: 1280px) {
         font-size: 16px;
@@ -245,13 +292,13 @@ p {
 
 .read-more {
     display: flex;
-    font-family: 'Caveat Brush';
+    font-family: $font-title;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.28;
 
-    color: #AB816C;
+    color: $color-button-bg;
 
     @media screen and (min-width: 1280px) {
         display: none;
@@ -271,14 +318,14 @@ p {
     }
 }
 
-.extra-text{
-    font-family: 'Montserrat';
+.extra-text {
+    font-family: $font-text;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
 
-    color: #2E2520;
+    color: $color-text;
 }
 
 #read-more-program:checked~.extra-text {
