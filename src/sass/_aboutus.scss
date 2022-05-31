@@ -125,8 +125,7 @@ body {
     }
 
     &__more,
-    &__less,
-    &__read-more {
+    &__less {
         font-family: $font-title;
         font-style: normal;
         font-weight: 400;
@@ -140,6 +139,7 @@ body {
     &__less:hover,
     &__read-more:hover {
         text-decoration: underline;
+        color: $color-button-bg;
     }
     
     &__extra-text {
