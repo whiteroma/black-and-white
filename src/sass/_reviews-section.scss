@@ -15,7 +15,30 @@ img {
     padding: 0;
 }
 
+%visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+%visually-visible {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    white-space: unset;
+    clip-path: inset(0);    
+}
+
 .reviews-section {
+    background-color: $color-bg;
     min-width: 320px;
     padding-top: 20px;
 
@@ -49,30 +72,47 @@ img {
     &__list {
         display: flex;        
         justify-content: space-between;
+        min-height: 580px;        
         margin-top: 20px;
-        margin-bottom: 32px;
+        
+        // margin-bottom: 32px;
     }
 
-    &__item {        
-        display: none;
+    &__item {
+        @extend %visually-hidden;
+        // display: none;
     }
 
-    &__item--active {
-        display: block;
-        margin: 0 10px;
+    &__item.swiper-slide-active {
+        @extend %visually-visible;
+        // display: block;
+        margin: 0 5px;
+    }
+        
+    &__item + .swiper-slide-active {
+        transform: translateX(290px);
+    }
+
+    &__item:nth-of-type(2) + .swiper-slide-active {
+        transform: translateX(580px);
     }
     
+    //     &__item.reviews-section__item--next {
+    //         transform: translateX(580px);
+    //     }
+
     @media screen and (min-width: 768px) {
         
-        padding-top: 50px;
+        padding-top: 50px;        
 
         &__list {
-            margin-top: 60px;            
+            margin-top: 60px;
+            width: 100%;
         }
 
-        &__item {
-            display: block;
-        }
+        // &__item {
+        //     display: block;
+        // }
 
         &__item--active {
             margin-left: -184px;
@@ -151,23 +191,17 @@ img {
         line-height: 1.21;
     }
 
-    .reviews-section__item--active &__title {
-        margin-bottom: 8px;
-    }
+    // .reviews-section__item--active &__title {
+    //     margin-bottom: 8px;
+    // }
 
     &__text {
+        padding-top: 8px;
+        padding-bottom: 32px;
         font-weight: 400;
         font-size: 16px;
         line-height: 1.25;
-    }
-
-    .reviews-section__item--next &__text {        
-        display: none;
-    }
-
-    .reviews-section__item--prev &__text {        
-        display: none;
-    }
+    }    
 
     @media screen and (min-width: 768px) {        
 
@@ -186,6 +220,14 @@ img {
 
         .reviews-section__item--active &__title {
             margin-bottom: 20px;
+        }
+
+        .reviews-section__item--next &__text {
+            display: none;
+        }
+        
+        .reviews-section__item--prev &__text {
+            display: none;
         }
     }
 
