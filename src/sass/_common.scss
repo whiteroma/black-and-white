@@ -4,4 +4,31 @@
 body {
     font-family: $font-text;
     color: $color-text;
+
+    @media screen and (max-width:767px) {
+    background-image: 
+    url("../images/header-bg/bg\ mobile.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    
+  }
+
+    @media screen and (min-width:768px) and (max-width: 1279px){
+    background-image: 
+    url("../images/header-bg/bg-tablet.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+  }
+
+  @media screen and (min-width: 1280px){
+    background-image: 
+    url("../images/header-bg/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    
+  }
+   
 }

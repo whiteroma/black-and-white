@@ -293,3 +293,10 @@ p {
     display: inline;
 }
 
+.program__events-item--donut1::before {
+    transition: transform 1.2s ease-in-out;
+}
+.program__events-item:hover .program__events-item--donut1::before {
+  transform: rotate(360deg);
+}
+
