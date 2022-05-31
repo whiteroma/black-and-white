@@ -1,0 +1,41 @@
+.bot-background {
+    margin-left: auto;
+    margin-right: auto;
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center 17px;
+    background-size: 100% 1337px;
+    background-image:
+        url(../images/bot-bg-tel.png);
+    
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image:
+          url(../images/bot-bg-tel@2.png);
+      }
+    
+      @media screen and (min-width: 768px) {
+        background-size: 100% 1512px;
+        background-position: top;
+        background-image:
+          url(../images/bot-bg-tab.png);
+    
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+          background-image:
+          url(../images/bot-bg-tab@2.png);
+        }
+      }
+    
+      @media screen and (min-width: 1280px) {
+          padding-top: 34px;
+          background-position: center 30px;
+        background-size: 100% 1861px;
+        background-image:
+          url(../images/bot-bg.png);
+    
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+          background-image:
+          url(../images/bot-bg@2.png);
+        }
+      }
+}
