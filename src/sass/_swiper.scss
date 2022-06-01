@@ -23,7 +23,8 @@
     position: absolute;
     left: 84px;
     bottom: 8px;
-    width: 35px;
+    padding: 10px 0;
+    width: 35px;        
     border-bottom: 1px solid $color-button-bg;
 
     @media screen and (min-width: 768px) {
@@ -41,7 +42,8 @@
     position: absolute;
     left: 169px;
     bottom: 8px;
-    width: 35px;
+    padding: 10px 0;
+    width: 35px;    
     border-bottom: 1px solid $color-button-bg;
 
     @media screen and (min-width: 768px) {

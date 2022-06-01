@@ -15,7 +15,30 @@ img {
     padding: 0;
 }
 
-.reviews-section {
+%visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+%visually-visible {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    white-space: unset;
+    clip-path: inset(0);
+    overflow: visible;
+}
+
+.reviews-section {    
     min-width: 320px;
     padding-top: 20px;
 
@@ -49,47 +72,123 @@ img {
     &__list {
         display: flex;        
         justify-content: space-between;
+        min-height: 580px;
         margin-top: 20px;
-        margin-bottom: 32px;
     }
 
-    &__item {        
-        display: none;
+    &__item {
+        @extend %visually-hidden;        
     }
 
-    &__item--active {
-        display: block;
-        margin: 0 10px;
+    &__item.swiper-slide-active {
+        @extend %visually-visible;
+        margin: 0 5px;
     }
-    
+        
+    &__item + .swiper-slide-active {
+        transform: translateX(290px);
+    }
+
+    &__item:nth-of-type(2) + .swiper-slide-active {
+        transform: translateX(580px);
+    }
+
     @media screen and (min-width: 768px) {
         
-        padding-top: 50px;
+        padding-top: 50px;        
 
-        &__list {
-            margin-top: 60px;            
+        &__list {            
+            margin: 60px auto 0;
+            width: 100%;
+            min-height: 525px;
+            text-align: center;
         }
 
-        &__item {
-            display: block;
+        &__item.swiper-slide {
+            position: static;
+            width: 100%;
+            height: auto;            
+            white-space: unset;
+            clip-path: inset(0);
+            overflow: visible;
+            margin-top: -76px;
+            transform: translateX(2045px);
         }
 
-        &__item--active {
-            margin-left: -184px;
-            margin-right: -184px;
+        &__item.swiper-slide-active {
+            margin: 0 5px;
+            transform: translateX(15px);
         }
         
-        &__item--prev {
-            display: block;
-            margin-left: 17px;
+        &__item.swiper-slide-next {
+            position: static;
+            width: 100%;
+            height: auto;
+            margin: 0;
+            white-space: unset;
+            clip-path: inset(0);
+            overflow: visible;
+
+            margin-right: 0;
+            margin-top: -76px;            
+        }                
+
+        &__item.swiper-slide-next + &__item:last-child {
+            position: static;
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            white-space: unset;
+            clip-path: inset(0);
+            overflow: visible;
+
             margin-top: -76px;
+            transform: translateX(-845px);
+        }
+
+        &__item.swiper-slide-active + &__item:last-child {
+            transform: translateX(-472px);
+        }
+
+        &__item:nth-of-type(1) + &__item.swiper-slide-next {
+            transform: translateX(-145px);
+        }
+
+        &__item:nth-of-type(2) + &__item.swiper-slide-next {
+            transform: translateX(440px);
+        }
+
+        &__item.swiper-slide-prev:first-of-type {
+            position: static;
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            white-space: unset;
+            clip-path: inset(0);
+            overflow: visible;
+            transform: translateX(755px);
+            margin-top: -76px;
+        }
+
+        &__item.swiper-slide-prev:nth-of-type(2) {
+            position: static;
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            white-space: unset;
+            clip-path: inset(0);
+            overflow: visible;
+            transform: translateX(1345px);
+            margin-top: -76px;
+        }
+
+        &__item:first-of-type + .swiper-slide-active {
+            transform: translateX(600px);
         }
         
-        &__item--next {
-            display: block;
-            margin-right: 17px;
-            margin-top: -76px;
-        }
+        &__item:nth-of-type(2) + .swiper-slide-active {
+            transform: translateX(1187px);
+        }        
     }
 
     @media screen and (min-width: 1280px) {
@@ -102,23 +201,58 @@ img {
         }
 
         &__list {
-            margin-top: 178px;            
+            margin-top: 178px;
+            min-height: 594px;
         }
         
-        &__item--active {
-            margin-left: -272px;
-            margin-right: -272px;
-        }
-
-        &__item--prev {
-            margin-top: -143px;
-            margin-left: 111px;            
-        }        
-
-        &__item--next {
-            margin-top: -143px;
-            margin-right: 111px;
-        }
+                &__item.swiper-slide {                    
+                    margin-top: -143px;
+                    transform: translateX(3372px);
+                }
+        
+                &__item.swiper-slide-active {
+                    margin: 0 5px;            
+                    transform: translateX(125px);
+                }
+        
+                &__item.swiper-slide-next {
+                    margin-top: -143px;
+                }
+        
+                &__item.swiper-slide-next+&__item:last-child {        
+                    margin-top: -143px;
+                    transform: translateX(-1200px);
+                }
+        
+                &__item.swiper-slide-active+&__item:last-child {
+                    transform: translateX(-472px);
+                }
+        
+                &__item:nth-of-type(1)+&__item.swiper-slide-next {
+                    transform: translateX(-130px);
+                }
+        
+                &__item:nth-of-type(2)+&__item.swiper-slide-next {
+                    transform: translateX(828px);
+                }
+        
+                &__item.swiper-slide-prev:first-of-type {
+                    transform: translateX(1347px);
+                    margin-top: -143px;
+                }
+        
+                &__item.swiper-slide-prev:nth-of-type(2) {                  
+                    transform: translateX(2312px);
+                    margin-top: -143px;
+                }
+        
+                &__item:first-of-type+.swiper-slide-active {
+                    transform: translateX(1090px);
+                }
+        
+                &__item:nth-of-type(2)+.swiper-slide-active {
+                    transform: translateX(2052px);
+                }
     }
 }
 
@@ -151,51 +285,42 @@ img {
         line-height: 1.21;
     }
 
-    .reviews-section__item--active &__title {
-        margin-bottom: 8px;
-    }
-
     &__text {
+        padding-top: 8px;        
         font-weight: 400;
         font-size: 16px;
         line-height: 1.25;
-    }
-
-    .reviews-section__item--next &__text {        
-        display: none;
-    }
-
-    .reviews-section__item--prev &__text {        
-        display: none;
-    }
+    }    
 
     @media screen and (min-width: 768px) {        
 
-        &__photo {
-            width: 152px;
+        &__photo {            
+            min-width: 152px;
         }
         
-        .reviews-section__item--active &__photo {
+        .reviews-section__item.swiper-slide-active &__photo {
             width: 336px;
             margin: 0 auto;
         }
 
         &__text {
+            display: none;
             width: 704px;            
         }
 
-        .reviews-section__item--active &__title {
-            margin-bottom: 20px;
+        .reviews-section__item.swiper-slide-active &__text {
+            display: block;
+            padding-top: 20px;
         }
     }
 
     @media screen and (min-width: 1280px) {        
 
         &__photo {
-            width: 285px;
+            min-width: 285px;
         }
         
-        .reviews-section__item--active &__photo {
+        .reviews-section__item.swiper-slide-active &__photo {
             width: 394px;
         }
 
