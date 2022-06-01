@@ -29,18 +29,26 @@
     }
 }
 
-.program__list-item:before {
-    display: inline-block;
-    content: ">";
-    height: 100%;
+.program__list-item {
+    position: relative;
+    padding-left: 22px;
+
+        &:not(:last-child) {
+        margin-bottom: 8px;
+
+            @media screen and (min-width: 1280px) {
+            margin-bottom: 16px;
+            }
+        }
 }
 
-.program__list-item:not(:last-child) {
-    margin-bottom: 8px;
-
-    @media screen and (min-width: 1280px) {
-        margin-bottom: 16px;
-    }
+.program__list-icon {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    top: 2px;
 }
 
 .program__description {
