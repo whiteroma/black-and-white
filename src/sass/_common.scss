@@ -10,20 +10,28 @@ body {
 
     
  background-size: 100% 460px, 100% 1337px;
- background-image: url(../images/top-bg-tel.png) top no-repeat, url(../images/bot-bg-tel.png) bottom no-repeat;
+ background-image: url(../images/top-bg-tel.png), url(../images/bot-bg-tel.png);
+ background-repeat: no-repeat, no-repeat;
+ background-position: top, bottom;
  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image:
-      url(../images/top-bg-tel@2.png) top no-repeat, url(../images/bot-bg-tel@2.png) bottom no-repeat;
+      url(../images/top-bg-tel@2.png), url(../images/bot-bg-tel@2.png);
+      background-repeat: no-repeat, no-repeat;
+      background-position: top, bottom;
   }
 
     @media screen and (min-width: 768px) {
         background-size: 100% 622px, 100% 1512px;
         background-image:
-        url(../images/top-bg-tab.png) top no-repeat, url(../images/bot-bg-tab.png) bottom no-repeat;
+        url(../images/top-bg-tab.png), url(../images/bot-bg-tab.png);
+        background-repeat: no-repeat, no-repeat;
+        background-position: top, bottom;
 
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image:
-        url(../images/top-bg-tab@2.png);
+        url(../images/top-bg-tab@2.png), url(../images/top-bg-tab@2.png);
+        background-repeat: no-repeat, no-repeat;
+        background-position: top, bottom;
         }
     }
 
@@ -31,11 +39,15 @@ body {
         font-size: 18px;
         background-size: 100% 956px, 100% 1931px;
         background-image:
-          url(../images/top-bg.png) top no-repeat, url(../images/bot-bg.png) bottom no-repeat center 30px;
+          url(../images/top-bg.png), url(../images/bot-bg.png);
+        background-repeat: no-repeat, no-repeat;
+        background-position: top, bottom;
     
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
           background-image:
-          url(../images/top-bg@2.png) top no-repeat, url(../images/bot-bg@2.png) bottom no-repeat center 30px;
+          url(../images/top-bg@2.png), url(../images/bot-bg@2.png);
+          background-repeat: no-repeat, no-repeat;
+          background-position: top, bottom;
         }
     }
 }
