@@ -94,6 +94,7 @@
             &.is-open {
             //  display: block;
             visibility: visible;
+            z-index: 160;
             
         }
 
@@ -159,7 +160,7 @@
 
 /*Меню Бургер Кнопка*/
 .menu-burger {
-    z-index: 3;
+    z-index: 161;
     border: none;
     position: absolute;
     top:20px;
@@ -236,7 +237,7 @@
       display: block;
       position: absolute;
       top:0;
-      right: -80px;
+      right: 0;
   }
 }
 
