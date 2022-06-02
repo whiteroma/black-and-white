@@ -112,6 +112,11 @@
         outline: none;
           }
 }
+.contact__input:hover.contact__input::placeholder,
+.contact__input:focus.contact__input::placeholder {
+    color:#AB816C; 
+}
+
 .contact__input:not(:placeholder-shown):required:invalid {
     border-color:  red;
     outline: none;
@@ -139,9 +144,12 @@
     color: #AB816C;
     }
     &:focus {
-    background-color: #FFFFFF;
-    border: 4px solid #AB816C;
-    border-radius: 50%;
+        color: #ab816c;
+        background-color: #ab816c80;
+    }
+    &:active {
+        background-color: #6d6b69;
+        color: #FEF3E4;
     }
     
     @media (min-width: 1280px) {
