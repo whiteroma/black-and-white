@@ -113,18 +113,55 @@
 .socials__twiter {
     width: 16px;
     height: 16px;
-    margin-right: 20px;
     fill: $color-text;
+
+    .socials__links:hover &{
+        fill: #ffffff;
+    }
+    
 }
 .socials__instagram {
     width: 16px;
     height: 16px;
-    margin-right: 20px;
     fill: $color-text;
+
+    .socials__links:hover &{
+        fill: #ffffff;
+    }
 }
 .socials__facebook {
     width: 16px;
     height: 16px;
     fill: $color-text;
+
+    .socials__links:hover &{
+        fill: #ffffff;
+    }
 }
 /*------END-----------*/
+
+.socials__links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid rgba(46,37,32,0.5);
+    transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+            background-color: #AB816C ;
+            
+        }
+
+}
+
+
+.socials__icon+.socials__icon {
+    margin-left: 10px;
+}
