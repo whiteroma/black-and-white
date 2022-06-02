@@ -41,6 +41,8 @@
         font-size: 18px;
         line-height: 1.22;
         color: #2E2520;
+        padding-top: 15px;
+        padding-bottom: 15px;
 
     }
 
@@ -162,7 +164,15 @@
    
        right: 10;
        top:20px;
-    background-color: transparent;
+  background-color: transparent;
+<<<<<<
+=======
+    right: 0; 
+    top:20;
+
+    &.is-open {
+        position: fixed;
+    }
 
     @media(max-width: 767px){
         margin-left: 62px;
