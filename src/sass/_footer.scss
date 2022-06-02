@@ -60,17 +60,18 @@ a {
 }
 
 .footer-sm__item:not(:last-child) {
-    margin-right: 2px;
+    margin-right: 10px;
 }
 
 .footer-sm__link {
-    width: 25px;
-    height: 25px;
+    width: 28px;
+    height: 28px;
     
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50px;
+    border: 1px solid rgba(46, 37, 32, 0.5);  
     transition:
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -106,6 +107,8 @@ a {
 }
 
 .contact-list__link {
+
+    padding: 10px 10px;
     display: flex;
     align-items: center;
     font-weight: 400;
