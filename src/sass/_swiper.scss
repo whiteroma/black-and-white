@@ -18,40 +18,36 @@
     }
 }
 
-.swiper-button-prev::after {
-    content: "";
+.swiper-button-prev {    
     position: absolute;
-    left: 84px;
-    bottom: 8px;
-    padding: 10px 0;
-    width: 35px;        
-    border-bottom: 1px solid $color-button-bg;
+    display: flex;
+    left: 85px;
+    bottom: 0;    
+    padding: 9px 0 7px;
+}
 
-    @media screen and (min-width: 768px) {
+.swiper-button-next {
+    @extend .swiper-button-prev;
+    left: 170px;
+}
+
+@media screen and (min-width: 768px) {
+    .swiper-button-prev {
         left: 307px;
     }
-
-    @media screen and (min-width: 1280px) {
-        left: 565px;
-        bottom: 9px;
+    .swiper-button-next {
+        left: 393px;
     }
 }
 
-.swiper-button-next::after {
-    content: "";
-    position: absolute;
-    left: 169px;
-    bottom: 8px;
-    padding: 10px 0;
-    width: 35px;    
-    border-bottom: 1px solid $color-button-bg;
-
-    @media screen and (min-width: 768px) {
-        left: 392px;
+@media screen and (min-width: 1280px) {
+    .swiper-button-prev {
+        left: 565px;
+        padding-bottom: 8px;
     }
 
-    @media screen and (min-width: 1280px) {
+    .swiper-button-next {
         left: 650px;
-        bottom: 9px;
+        padding-bottom: 8px;
     }
 }
