@@ -154,7 +154,6 @@
         @media screen and (min-width:1280px) {
             font-size: 20px;
             line-height: 1.2;
-            margin-bottom: 59px;
             text-align: end;
         }
 }
@@ -222,9 +221,18 @@
                 }
             }
     }
+    .form__input:hover {
+        border-bottom-color: rgba(171, 129, 108, 0.5);
+    }
+    .form__input:hover.form__input::placeholder,
+    .form__input:focus.form__input::placeholder
+     { 
+        color:#AB816C;   
+    }
   .form__input:invalid {
       border-color: red;
-  }
+    }
+
     .form__input::placeholder {
         font-family: $font-text;
         font-weight: 400;
@@ -240,16 +248,23 @@
         border-radius: 25px;
         border: none;
         font-family: $font-title;
-        font-size: 24px;
-        line-height: 1.25;
+        font-size: 18px;
+        line-height: 1.27;
         background-color: #AB816C;
         color: white;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        // cursor: url(/src/images/tap.png), pointer;
+            @media screen and (min-width:1280px) {
+                font-size: 24px;
+                line-height: 1.25;
+            }
             &:hover,
             &:focus {
                 color: #ab816c;
                 background-color: #ab816c80;
+            }
+            &:active {
+                background-color: #6d6b69;
+                color: #FEF3E4;
             }
     }
