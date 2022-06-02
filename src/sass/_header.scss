@@ -147,11 +147,11 @@
     z-index: 3;
     border: none;
     background-color: transparent;
+    right: 67px;
+    top: 25px;
 
     &.is-open {
         position: fixed;
-        right: 67px;
-        top: 25px;
     }
 
     @media(max-width: 767px){
