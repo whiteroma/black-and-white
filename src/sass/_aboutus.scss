@@ -3,15 +3,15 @@ body {
 }
 
 .about-us {
-    @media screen and (min-width: 1280px) {
-        padding-top: 130px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 85px;
     }
 
     &__inner {
         @media screen and (min-width: 768px) {
             display: flex;
             justify-content: center;
-            margin-top: 69px;
         }
 
     }
@@ -27,8 +27,8 @@ body {
         
     }
 
-    &__images {
-
+    &__pic {
+        
         @media screen and (min-width: 768px) {
             margin-right: 32px;
         }
@@ -46,11 +46,11 @@ body {
         }
 
         @media screen and (min-width: 768px) {
-            transform: translate(76px, -100px);
+            transform: translate(-230px, 250px);
         }
 
         @media screen and (min-width: 1280px) {
-            transform: translate(114px, -160px);
+            transform: translate(-340px, 390px);
         }
     }
 
@@ -73,7 +73,8 @@ body {
         }
 
         @media screen and (min-width: 1280px) {
-            display: none;
+            max-width: 392px;
+            margin-top: 32px;
         }
     }
 
@@ -115,13 +116,18 @@ body {
 
         @media screen and (min-width: 1280px) {
             font-size: 18px;
-            line-height: 22px;
+            line-height: 1.22;
         }
     }
 
     &__read-more {
         display: flex;
         padding: 0;
+
+        @media screen and (min-width: 1280px) {
+            display: none;
+        }
+
     }
 
     &__more,
@@ -144,6 +150,13 @@ body {
     
     &__extra-text {
         display: none;
+        margin-bottom: 16px;
+
+        @media screen and (min-width: 1280px) {
+            display: block;
+            margin-bottom: 0;
+        }
+
     }
     
     &__less {
@@ -160,16 +173,5 @@ body {
     
     #read-more:checked ~ &__read-more &__less {
         display: inline;
-    }
-
-    &__desktop {
-        display: flex;
-        flex-direction: column;
-        margin-top: 32px;
-        width: 392px;
-
-        @media screen and (max-width: 1279px) {
-            display: none;
-        }
     }
 }
