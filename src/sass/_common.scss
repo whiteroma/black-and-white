@@ -10,7 +10,7 @@ body {
     cursor: url(/src/images/cursor.png), auto;
 
     
- background-size: 100% 460px, 100% 1337px;
+ background-size: cover;
  background-image: url(../images/top-bg-tel.png), url(../images/bot-bg-tel.png);
  background-repeat: no-repeat, no-repeat;
  background-position: top, bottom;
@@ -19,10 +19,11 @@ body {
       url(../images/top-bg-tel@2.png), url(../images/bot-bg-tel@2.png);
       background-repeat: no-repeat, no-repeat;
       background-position: top, bottom;
+      // background-size: 100% 460px, 100% 1337px;
   }
 
     @media screen and (min-width: 768px) {
-        background-size: 100% 622px, 100% 1512px;
+        // background-size: 100% 622px, 100% 1512px;
         background-image:
         url(../images/top-bg-tab.png), url(../images/bot-bg-tab.png);
         background-repeat: no-repeat, no-repeat;
@@ -38,7 +39,7 @@ body {
 
     @media screen and (min-width:1280px) {
         font-size: 18px;
-        background-size: 100% 956px, 100% 1931px;
+        // background-size: 100% 956px, 100% 1931px;
         background-image:
           url(../images/top-bg.png), url(../images/bot-bg.png);
         background-repeat: no-repeat, no-repeat;
