@@ -147,8 +147,8 @@
     z-index: 3;
     border: none;
     background-color: transparent;
-    right: 67px;
-    top: 25px;
+    right: 0; 
+    top:20;
 
     &.is-open {
         position: fixed;
