@@ -147,6 +147,13 @@
     z-index: 3;
     border: none;
     background-color: transparent;
+
+    &.is-open {
+        position: fixed;
+        right: 67px;
+        top: 25px;
+    }
+
     @media(max-width: 767px){
         margin-left: 62px;
     }
