@@ -56,7 +56,7 @@
 .nav {
  padding-top: 8px;
  display: flex;
- justify-content: end;
+ justify-content: center;
 
     @media screen and (min-width:768px){
         justify-content: space-between;
@@ -161,19 +161,11 @@
 .menu-burger {
     z-index: 3;
     border: none;
+    position: absolute;
+    top:20px;
+    right: 16px;
+    background-color: transparent;
    
-       right: 10;
-       top:20px;
-  background-color: transparent;
-<<<<<<
-=======
-    right: 0; 
-    top:20;
-
-    &.is-open {
-        position: fixed;
-    }
-
     @media(max-width: 767px){
         margin-left: 62px;
     }
@@ -182,9 +174,9 @@
         display: none;
     }
    
-   & .icon-cross {
+    & .icon-cross {
     display: none;
-   }
+    }
 
    &.is-open .icon-cross {
     display: block;
@@ -194,15 +186,17 @@
    &.is-open .icon-menu {
     display: none;
    }
+
    &.is-open {
        position: fixed;
-       right: 0;
+       right: 5px;
        top:20px;
       
        
    }
 
 }
+
 .icon-cross {
     padding: 0;
     margin: 0;
