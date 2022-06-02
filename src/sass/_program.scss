@@ -115,11 +115,10 @@
     flex-wrap: wrap;
     justify-content: flex-end;
     flex-basis: 50%;
-    margin-left: -5px;
     height: 100%;
 
     @media screen and (min-width: 768px) and (max-width: 1279px) {
-        margin-left: -33px;
+        margin-left: -20px;
     }
 }
 
@@ -150,17 +149,25 @@
             width: 180px;
             height: 180px;
             flex-basis: calc(50% - 130px);
-            margin-left: 120px;
+            margin-left: 60px;
+            margin-right: 60px;
         }
 
         &:nth-child(odd) {
             margin-top: 34px;
+            margin-left: 0;
         }
 
         &:nth-child(2n) {
             margin-top: 57px;
+            margin-right: 0;
+
             @media screen and (min-width: 768px) {
                 margin-top: 70px;
+            }
+            
+            @media screen and (min-width: 1280px) {
+                margin-top: 75px;
             }
         }
 
