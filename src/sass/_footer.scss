@@ -121,7 +121,9 @@ a {
             color: #AB816C;
             // fill: #AB816C;
         }
-
+        @media(min-width: 1280px){
+            margin-left: 128px;
+        }
 }
 
 .tel-icon {
