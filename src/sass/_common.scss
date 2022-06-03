@@ -5,13 +5,13 @@ header {
   background-image: url(../images/header/donuts-mobile@1.png);
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-size: contain;
+  background-size: 130px;
 
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
           background-image: url(../images/header/donuts-mobile@2.png);
           background-repeat: no-repeat;
           background-position: 0 0;
-          background-size: contain;
+          background-size: 130px;
       }
       @media screen and (min-width: 768px) {
         background-image: url(../images/header/donuts-tablet@1.png);
