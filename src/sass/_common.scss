@@ -18,7 +18,7 @@ body {
       url(../images/top-bg-tel@2.png), url(../images/bot-bg-tel@2.png), url(../images/header/donuts-mobile@2.png);
       background-repeat: no-repeat, no-repeat, no-repeat;
       background-position: top, bottom, top 0 left 0;
-      background-size: 100% 460px, 100% 1337px;
+      background-size: 100% 460px, 100% 1337px, contain;
   }
 
   @media screen and (max-width: 319px) {
