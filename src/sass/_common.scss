@@ -1,6 +1,44 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
 
+header {
+  background-image: url(../images/header/donuts-mobile@1.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+          background-image: url(../images/header/donuts-mobile@2.png);
+          background-repeat: no-repeat;
+          background-position: 0 0;
+          background-size: contain;
+      }
+      @media screen and (min-width: 768px) {
+        background-image: url(../images/header/donuts-tablet@1.png);
+        background-repeat: no-repeat;
+        background-position: top 0 right 90px;
+        background-size: contain;
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+          background-image: url(../images/header/donuts-tablet@2.png);
+          background-repeat: no-repeat;
+          background-position: top 0 right 90px;
+          background-size: contain;
+        }
+    }
+      @media screen and (min-width: 1280px) {
+          background-image:  url(../images/header/donuts-desktop@1.png);
+          background-repeat: no-repeat;
+          background-position: top 0 right 0;
+          background-size: contain;
+          @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image:  url(../images/header/donuts-desktop@2.png);
+            background-repeat: no-repeat;
+            background-position: top 0 right 0;
+            background-size: contain;
+          }
+      }
+    }
+
 body {
     min-width: 320px;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -10,15 +48,15 @@ body {
     cursor: url(/src/images/cursor.png), auto;
     background-color: #FFFFF9;
     
- background-image: url(../images/top-bg-tel.png), url(../images/bot-bg-tel.png), url(../images/header/donuts-mobile@1.png);
- background-repeat: no-repeat, no-repeat, no-repeat;
- background-position: top, bottom, top 0 left 0;
+ background-image: url(../images/top-bg-tel.png), url(../images/bot-bg-tel.png);
+ background-repeat: no-repeat, no-repeat;
+ background-position: top, bottom;
  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image:
-      url(../images/top-bg-tel@2.png), url(../images/bot-bg-tel@2.png), url(../images/header/donuts-mobile@2.png);
-      background-repeat: no-repeat, no-repeat, no-repeat;
-      background-position: top, bottom, top 0 left 0;
-      background-size: 100% 460px, 100% 1337px, contain;
+      url(../images/top-bg-tel@2.png), url(../images/bot-bg-tel@2.png);
+      background-repeat: no-repeat, no-repeat;
+      background-position: top, bottom;
+      background-size: 100% 460px, 100% 1337px;
   }
 
   @media screen and (max-width: 319px) {
@@ -29,15 +67,15 @@ body {
     @media screen and (min-width: 768px) {
         background-size: 100% 622px, 100% 1512px;
         background-image:
-        url(../images/top-bg-tab.png), url(../images/bot-bg-tab.png), url(../images/header/donuts-tablet@1.png);
-        background-repeat: no-repeat, no-repeat, no-repeat;
-        background-position: top, bottom, top 0 right 90px;
+        url(../images/top-bg-tab.png), url(../images/bot-bg-tab.png);
+        background-repeat: no-repeat, no-repeat;
+        background-position: top, bottom;
 
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image:
-        url(../images/top-bg-tab@2.png), url(../images/top-bg-tab@2.png),  url(../images/header/donuts-tablet@2.png);
-        background-repeat: no-repeat, no-repeat, no-repeat;
-        background-position: top, bottom, top 0 right 90px;
+        url(../images/top-bg-tab@2.png), url(../images/top-bg-tab@2.png);
+        background-repeat: no-repeat, no-repeat;
+        background-position: top, bottom;
         }
     }
 
@@ -45,15 +83,15 @@ body {
         font-size: 18px;
         background-size: 100% 956px, 100% 1931px;
         background-image:
-          url(../images/top-bg.png), url(../images/bot-bg.png), url(../images/header/donuts-desktop@1.png);
-        background-repeat: no-repeat, no-repeat, no-repeat;
-        background-position: top, bottom, top 0 right 0;
+          url(../images/top-bg.png), url(../images/bot-bg.png);
+        background-repeat: no-repeat, no-repeat;
+        background-position: top, bottom;
     
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
           background-image:
-          url(../images/top-bg@2.png), url(../images/bot-bg@2.png), url(../images/header/donuts-desktop@2.png);
-          background-repeat: no-repeat, no-repeat, no-repeat;
-          background-position: top, bottom, top 0 right 0;
+          url(../images/top-bg@2.png), url(../images/bot-bg@2.png);
+          background-repeat: no-repeat, no-repeat;
+          background-position: top, bottom;
         }
     }
 }
