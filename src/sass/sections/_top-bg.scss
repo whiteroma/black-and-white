@@ -1,0 +1,97 @@
+.top-background {
+    @media screen and (min-width: 1280px) {
+        &::after {
+          content: "";
+          position: absolute;
+          z-index: 1;
+          right: 0;
+          top: 0;
+          width: 715px;
+          height: 656px;
+          background-image: url(../images/header/donuts-desktop@1.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+          
+          @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(../images/header/donuts-desktop@1.png);
+            background-repeat: no-repeat;
+          }
+        }
+      }
+
+      @media screen and (min-width: 768px) and (max-width:1279px) {
+        &::after {
+          content: "";
+          position: absolute;
+          z-index: 1;
+          right: 102px;
+          top: 0;
+          width: 378px;
+          height: 361px;
+          background-image: url(../images/header/donuts-tablet@1.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+          
+          @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(../images/header/donuts-tablet@1.png);
+            background-repeat: no-repeat;
+          }
+        }
+      }
+
+      @media screen and (max-width: 767.98px) {
+        &::after {
+          content: "";
+          position: absolute;
+          z-index: 1;
+          left: 0;
+          top: 0;
+          width: 120px;
+          height: 120px;
+          background-image: url(../images/header/donuts-tablet@1.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+          
+          @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(../images/header/donuts-tablet@2.png);
+            background-repeat: no-repeat;
+          }
+        }
+      }  
+
+ margin-left: auto;
+ margin-right: auto;
+ background-size: contain;
+ background-repeat: no-repeat;
+ background-position: top;
+ background-size: 100% 460px;
+ background-image: url(../images/top-bg-tel.png);
+            
+            @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+                background-image:
+                  url(../images/top-bg-tel@2.png);
+              }
+            
+              @media screen and (min-width: 768px) {
+                background-size: 100% 622px;
+                background-image:
+                  url(../images/top-bg-tab.png);
+            
+                @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+                  background-image:
+                  url(../images/top-bg-tab@2.png);
+                }
+              }
+            
+              @media screen and (min-width: 1280px) {
+                background-size: 100% 956px;
+                background-image:
+                  url(../images/top-bg.png);
+            
+                @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+                  background-image:
+                  url(../images/top-bg@2.png);
+                }
+              }
+        
+}

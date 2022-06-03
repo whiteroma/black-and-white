@@ -1,0 +1,53 @@
+.swiper {
+    position: relative;    
+}
+
+.swiper-pagination {
+    text-align: center;
+
+    font-family: $font-text;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.21;
+
+    color: $color-button-bg;
+
+    @media screen and (min-width: 1280px) {
+        font-size: 16px;
+        line-height: 1.25;
+    }
+}
+
+.swiper-button-prev {    
+    position: absolute;
+    display: flex;
+    left: 85px;
+    bottom: 0;    
+    padding: 9px 0 7px;
+}
+
+.swiper-button-next {
+    @extend .swiper-button-prev;
+    left: 170px;
+}
+
+@media screen and (min-width: 768px) {
+    .swiper-button-prev {
+        left: 307px;
+    }
+    .swiper-button-next {
+        left: 393px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .swiper-button-prev {
+        left: 565px;
+        padding-bottom: 8px;
+    }
+
+    .swiper-button-next {
+        left: 650px;
+        padding-bottom: 8px;
+    }
+}
