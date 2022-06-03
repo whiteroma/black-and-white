@@ -15,4 +15,6 @@
 
 
   
-import "./js/my-swiper"
+import "./js/my-swiper";
+
+import "./js/menu"
