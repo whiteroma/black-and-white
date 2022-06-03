@@ -51,6 +51,7 @@ body {
  background-image: url(../images/top-bg-tel.png), url(../images/bot-bg-tel.png);
  background-repeat: no-repeat, no-repeat;
  background-position: top, bottom;
+ background-size: 100% 460px, 100% 1337px;
  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image:
       url(../images/top-bg-tel@2.png), url(../images/bot-bg-tel@2.png);
